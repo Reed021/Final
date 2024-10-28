@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <div class="left-edge"></div>
+    <div class="sidebar-tab"></div>
+
+    <nav id="sidebar">
+      <a href="index.html">Home</a>
+      <a href="todo.html">To-Do</a>
+      <div class="animation start-home"></div>
+    </nav>
+    <script>
+      const navBar = document.getElementById("sidebar");
+      const leftEdge = document.querySelector(".left-edge");
+      const sidebarTab = document.querySelector(".sidebar-tab");
+
+      leftEdge.addEventListener("mouseenter", () => {
+        navBar.style.left = "0";
+      });
+      sidebarTab.addEventListener("mouseenter", () => {
+        navBar.style.left = "0";
+      });
+
+      navBar.addEventListener("mouseleave", () => {
+        navBar.style.left = "-250px";
+      });
+    </script>
+  </head>
+  <body>
+    --greeting--
+    <div id="greeting-container"></div>
+
+    <!-- Introduction -->
+    <header>
+      <h1 id="myName" data-custom-attr="intro-name">Connor Reed's Portfolio</h1>
+      <p>Welcome to my personal website!</p>
+    </header>
+
+    <!-- Skills List -->
+    <section>
+      <h2>Skills and Hobbies</h2>
+      <img
+        src="images/3.jpeg"
+        alt="Profile Picture"
+        class="profile-image"
+        data-custom-attr="profile-pic"
+      />
+      <img
+        src="images/8.jpg"
+        alt="Profile Picture"
+        class="profile-image"
+        data-custom-attr="profile-pic"
+      />
+      <img
+        src="images/9.jpg"
+        alt="Profile Picture"
+        class="profile-image"
+        data-custom-attr="profile-pic"
+      />
+      <ul>
+        <li data-custom-attr="skill">Computer Science</li>
+        <li data-custom-attr="skill">Gardening</li>
+        <li data-custom-attr="skill">Cooking</li>
+        <li data-custom-attr="skill">Geopolitics</li>
+        <li data-custom-attr="skill">Management</li>
+      </ul>
+      <p>
+        This summer I picked up gardening as my other hobby, and it compliments
+        my cooking well! In the picture on the left you'll see a raised garden.
+        this summer I grew tomatoes, basil, garlic, lavendar, oregano, chives,
+        sage, marigolds, and mint. This year was very rainy so my tomatoes didnt
+        come out well. Yet, all my other spices did fantastic! I cant wait to
+        get my garden ready for the next spring. I actually purposefully grew
+        spices that have synergies with eacother. Basil, chives, and marigolds
+        work in harmony to prevent pests from eating the tomatoes. Marigolds
+        smell unplesant to bugs, chives are unplesant smelling to deer, and
+        basil serves as defense for the tomatoes because bugs will eat it before
+        the tomatoes.
+      </p>
+      <p>
+        Cooking is one of my favorite hobbies. My suitemates are blessed with
+        delicious food nearly every night due to my hobby. My family has always
+        been big on cooking with my father teaching me simple chicken cutlets
+        and pasta at a young age. However my passion of cooking has been mostly
+        self developed in the last year with my father having gone to florida
+        when i was 16.
+      </p>
+    </section>
+
+    <!-- About Me -->
+    <section>
+      <h2>About Me</h2>
+      <img
+        src="images/1.jpeg"
+        alt="Profile Picture"
+        class="profile-image"
+        data-custom-attr="profile-pic"
+      />
+      <img
+        src="images/2.jpeg"
+        alt="Profile Picture"
+        class="profile-image"
+        data-custom-attr="profile-pic"
+      />
+      <img
+        src="images/5.jpeg"
+        alt="Profile Picture"
+        class="profile-image"
+        data-custom-attr="profile-pic"
+      />
+      <img
+        src="images/6.jpeg"
+        alt="Profile Picture"
+        class="profile-image"
+        data-custom-attr="profile-pic"
+      />
+      <img
+        src="images/7.jpeg"
+        alt="Profile Picture"
+        class="profile-image"
+        data-custom-attr="profile-pic"
+      />
+      <p>
+        My name is <em>Connor Reed</em>. Im currently a student at Southern
+        Connecticut State University. My major is Interdisciplinary studies
+        where I combine 3 minors into a major. I chose Computer Science,
+        History, and Managent. Together they each have a roll in building my IDS
+        major.
+      </p>
+      <p>
+        In highschool I had to run my father's carwash, and I learned that I
+        love to find unique solutions to complicated problems. However more
+        importantly I learned the best way to manage others is to divide and
+        conquer, giving each teammate a role they enjoy and take pride in doing.
+        I strongly belive a workplace should thrive to grow a strong team who
+        support one another.
+      </p>
+      <p>
+        At Southern Connecticut State University I met my girlfriend, Luisa, in
+        the picture on the right we were at cape cod for vacation. She also
+        shares my love of tacobell and baja blast. She is going to SCSU to
+        become a speech language pathologist (For those of us who dont speak
+        medical lingo, she is a speech therapist). Luisa is Italian and lives in
+        the Bronx, NYC. Despite this, I am the chef of the relationship,
+        although I am also Italian. Speaking of cooking. Cooking is one of my
+        favorite hobbies. My suitemates are blessed with delicious food nearly
+        every night due to my hobby. My cousin who also goes to SCSU has tried
+        to come over the last 3 nights because I invited her over for dinner
+        once and now Connecticut hall isnt good enough for her tastes. I
+        reluctantly havent had left overs for the last week.
+      </p>
+      <img
+        src="images/4.jpeg"
+        alt="Profile Picture"
+        class="profile-image-HZ"
+        data-custom-attr="profile-pic"
+      />
+    </section>
+
+    <!-- Table of Education -->
+    <section>
+      <h2>Education and Experience</h2>
+      <table data-custom-attr="education-table">
+        <tr>
+          <th>Education</th>
+          <th>Degree</th>
+          <th>Institution</th>
+        </tr>
+        <tr>
+          <td>2019-2023</td>
+          <td>B.A. in Interdisciplinary Studies</td>
+          <td>Southern Connecticut State University</td>
+        </tr>
+        <tr>
+          <td>2023-present</td>
+          <td>Professional Development</td>
+          <td>Various Online Courses</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Button and Extra Content -->
+    <section>
+      <button id="SecretMoreBtn">DO NOT PRESS</button>
+      <p id="extraContent" style="display: none">
+        I dont know why you would've pressed this... theres nothing here. I did
+        say not to press it?
+      </p>
+    </section>
+
+    <div id="imageModal" class="modal">
+      <span id="closeModal" class="close">&times;</span>
+      <img id="modalImage" class="modal-content" />
+      <div id="modalText" class="modal-text"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

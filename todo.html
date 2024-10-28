@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <div class="left-edge"></div>
+    <div class="sidebar-tab"></div>
+
+    <nav id="sidebar">
+      <a href="index.html">Home</a>
+      <a href="todo.html">To-Do</a>
+      <div class="animation start-home"></div>
+    </nav>
+    <script>
+      const navBar = document.getElementById("sidebar");
+      const leftEdge = document.querySelector(".left-edge");
+      const sidebarTab = document.querySelector(".sidebar-tab");
+
+      leftEdge.addEventListener("mouseenter", () => {
+        navBar.style.left = "0";
+      });
+      sidebarTab.addEventListener("mouseenter", () => {
+        navBar.style.left = "0";
+      });
+
+      navBar.addEventListener("mouseleave", () => {
+        navBar.style.left = "-250px";
+      });
+    </script>
+
+    <title>To-Do List with AJAX</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        padding: 5px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>To-Do List</h1>
+
+    <button onclick="loadTodos()">Load To-Do List</button>
+    <ul id="todoList">
+      <!-- List of to-do items will be loaded here -->
+    </ul>
+
+    <h2>Add New To-Do</h2>
+    <form id="todoForm" onsubmit="addTodo(); return false;">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title" required />
+      <br />
+      <label for="completed">Completed:</label>
+      <input type="checkbox" id="completed" name="completed" />
+      <br />
+      <button type="submit">Add To-Do</button>
+    </form>
+
+    <ul id="newTodo">
+      <!-- New to-do item will appear here -->
+    </ul>
+
+    <script>
+      function loadTodos() {
+        fetch("https://jsonplaceholder.typicode.com/todos?_limit=5")
+          .then((response) => response.json())
+          .then((data) => {
+            const todoList = document.getElementByID("todoList");
+            todoList.innerHTML = "";
+            data.forEach((todo) => {
+              const listItem = document.createElement("li");
+              listItem.textContent = `${todo.title} - ${
+                todo.completed ? "completed" : "not completed"
+              }`;
+              todoList.appendChild(listItem);
+            });
+          })
+          .catch((error) => {
+            consol.error("Error loading:", error);
+          });
+      }
+
+      function addTodo() {
+        const title = document.getElementById("title").value;
+        const completed = document.getElementById("completed").checked;
+
+        const newTodo = {
+          title: title,
+          completed: completed,
+        };
+
+        fetch("https://jsonplaceholder.typicode.com/todos", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newTodo),
+        })
+          .then((response) => response.json())
+          .then((data) => {
+            const newTodoList = document.getElementById("newTodo");
+            const listItem = document.createElement("li");
+            listItem.textContent = `${data.title} - ${
+              data.completed ? "Completed" : "Not Completed"
+            }`;
+            newTodoList.appendChild(listItem);
+
+            // Clear the form fields after submission
+            document.getElementById("todoForm").reset();
+          })
+          .catch((error) => {
+            console.error("Error adding new todo:", error);
+          });
+      }
+    </script>
+  </body>
+</html>
