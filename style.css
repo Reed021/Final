@@ -1,0 +1,722 @@
+h1 {
+    
+}
+body, html {
+    margin:0; padding: 0;
+}
+
+/* Start of Naigation Syling */
+.nav {
+    position: sticky; 
+    background-color: #705e46;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    z-index: 2;
+}
+  
+.nav a {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2vw 3vw;
+    font-size: calc(.1px + 1.4vw); 
+    text-decoration: none;
+    background-color: #705e46;
+    position: relative;
+}
+  
+.nav a:hover {
+    color: black ;
+    background-color: #5a4b38;
+}
+.nav a.active {
+    background-color: #422701;
+    color: rgb(255, 255, 255) ;
+}
+@media screen and (min-width: 500px) {
+    .nav {
+      display: flex;
+      justify-content: center;
+    }
+}
+/* End of Naigation Syling */
+.intro{ 
+    background-color: #d6b588;
+    width: 100% ;
+    top: 0;
+    left: 0;
+    position: relative;
+    margin-top: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.introIMG {
+    display:block;
+    max-width: calc(400px + 2vw); 
+    text-wrap: wrap;
+    margin-left: -0px;
+    float: right;
+
+}
+.introHDR {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    position: relative;
+
+}
+
+.introTxt {
+    float: left;
+    display: relative;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 2vw;
+    position: relative;
+    text-wrap:wrap;
+    font-family: "Arial", Arial, sans-serif;
+    font-size: calc(.1px + 2.8vw); 
+    letter-spacing: .3vw;
+    word-spacing: .4vw;
+}
+.introTxt0 {
+    float: left;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: 2vw;
+    padding: 2vw;
+    position: relative;
+    text-wrap:wrap;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 3vw;
+    letter-spacing: .3vw;
+    word-spacing: .4vw;
+}
+
+/*_______________________________________________           About,*/
+/* Start of About Syling */
+
+.aboutback {
+    background-color: #524433;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    margin-top: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    min-height: 60vw;
+    max-height: 200vw;
+    background-image:url(AbtDes.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+}
+.about {
+    background-color: #8a7d6b;
+    top: 0;
+    left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 90%;
+    margin: 0 auto;
+    padding: 1em;
+    border: black;
+    border-radius: 2vw;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.6vw;
+}
+.abtLGTxt {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; 
+    background-color: #422701;
+    color: rgb(255, 255, 255);
+    font-family: "Arial", Arial, sans-serif;
+    font-size: calc(5px + 2vw); 
+    padding: 0.5em;
+    border-radius: 0.5em;
+    transform-origin: center;
+    align-self: stretch;
+    white-space: nowrap;
+
+}
+.abtLGTxt a {
+    float: left; 
+    display: block;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.abtPGTxt {
+    font-family: "Times New Roman", Times, serif;
+    font-size: calc(.7px + 1.8vw); 
+    margin-left: 2vw;
+    text-wrap: balance;
+    word-spacing:.3vw;
+    letter-spacing: .05vw;
+    display: flex;
+    margin-right: calc(-1px - 3vw); 
+
+}
+.abtProfileIMG {
+    display:flex;
+    align-self:auto;
+    max-width: 30%; 
+    border-radius: 5vw;
+    padding: 2vw;
+    text-wrap: wrap;
+    margin-left: 4vw;
+}
+
+
+/* End of About Syling */
+/*_______________________________________________           Interests,*/
+/* Start of Interests Syling */
+
+.interestback {
+    background-color: #d6b588;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    margin-top: 0;
+    padding:1vw;
+    align-items: left;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    min-height: 60vw;
+    max-height: 200vw;
+}
+.intLGTxt {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; 
+    background-color: #422701;
+    color: rgb(255, 255, 255);
+    font-family: "Arial", Arial, sans-serif;
+    font-size: calc(5px + 1.5vw); 
+    padding: 0.5em;
+    border-radius: 0.5em;
+    transform-origin: center;
+    align-self: stretch;
+    white-space: nowrap;
+
+}
+.intLGTxt a {
+    float: left; 
+    display: block;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.interestblock {
+    width: 98%;
+    height: 20vw;
+    background-color: #d6b588;
+    align-items: left;
+    float: left;
+    display: flex;      
+    padding:1vw;       
+    flex-direction: row;
+}
+.interest1 {
+    background-color: #8a7d6b;
+    top: .3vw;
+    left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 30%;
+    margin:0 auto;
+    padding: 6em;
+    border: black;
+    border-radius: 2vw;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.6vw;
+}
+.interest2 {
+    background-color: #8a7d6b;
+    top: .3vw;
+    left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 12%;
+    margin:0 auto;
+    padding: 6em;
+    border: black;
+    border-radius: 2vw;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.6vw;
+}
+.interest3 {
+    background-color: #8a7d6b;
+    top: .3vw;
+    left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 35%;
+    margin:0 auto;
+    padding: 6em;
+    border: black;
+    border-radius: 2vw;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.6vw;
+}
+.interestTxtBx{
+    position: relative;
+    background-color: #171511;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 30%;
+    margin:0 auto;
+    padding:1vw;
+    padding: 6em;
+    margin-right: 2vw;
+    border: black;
+    border-radius: 2vw;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.6vw;
+
+}
+.interestTxt {
+    font-family: "Times New Roman", Times, serif;
+    font-size: calc(.7px + 1.8vw); 
+    margin-left: 2vw;
+    text-wrap: balance;
+    word-spacing:.3vw;
+    letter-spacing: .05vw;
+    display: flex;
+    color: white; 
+}
+.interest-image {
+  display:inline-block;
+    align-self:auto;
+    width:15vw;
+    height:19vw;
+    border-radius: 5vw;
+    padding: 2vw;
+    text-wrap: wrap;
+    margin-left: 4vw;
+}
+
+.interest-image-HZ {
+  display:flex;
+    align-self:auto;
+    max-width: 110%; 
+    border-radius: 5vw;
+    padding: 2vw;
+    text-wrap: wrap;
+    margin-left: 4vw;
+
+}
+
+
+/* End of Interests Syling */
+/*_______________________________________________           Projects */
+/* Start of Projects Syling */
+
+.projectBack {
+    background-color: #524433;
+    max-width: 100%;
+    top: 0;
+    left: 0;
+    position: relative;
+    margin-top: 0;
+    padding:1vw;
+    align-items: right;
+    justify-content: right;
+    display: flex;
+    flex-direction: column;
+    min-height: 70vw;
+    max-height: 200vw;
+}
+.proLGTxt {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center; 
+    background-color: #422701;
+    color: rgb(255, 255, 255);
+    font-family: "Arial", Arial, sans-serif;
+    font-size: calc(5px + 1.5vw); 
+    padding: 0.5em;
+    border-radius: 0.5em;
+    transform-origin: center;
+    align-self: stretch;
+    white-space: nowrap;
+
+}
+.proLGTxt a {
+    float: left; 
+    display: block;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.projectBlock {
+    width: 98%;
+    height: 20vw;
+    background-color: #524433;
+    align-items: right;
+    float: right;
+    display: flex;      
+    padding:1vw;       
+    flex-direction: row;
+}
+.project1 {
+    background-color: #8a7d6b;
+    top: .3vw;
+    left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 35%;
+    margin:0 auto;
+    padding: 6em;
+    border: black;
+    border-radius: 2vw;
+    margin-right: 2vw;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.6vw;
+}
+.project2 {
+    background-color: #8a7d6b;
+    top: .3vw;
+    left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 35%;
+    margin:0 auto;
+    margin-right: 2vw;
+    padding: 6em;
+    border: black;
+    border-radius: 2vw;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.6vw;
+}
+.project3 {
+    background-color: #8a7d6b;
+    top: .3vw;
+    left: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 35%;
+    margin:0 auto;
+    margin-right: 2vw;
+    padding: 6em;
+    border: black;
+    border-radius: 2vw;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.6vw;
+}
+.projectTxtBx{
+    position: relative;
+    background-color: #171511;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 30%;
+    margin:0 auto;
+    padding:1vw;
+    padding: 6em;
+    border: black;
+    border-radius: 2vw;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 1.6vw;
+}
+.projectTxt {
+    font-family: "Times New Roman", Times, serif;
+    font-size: calc(.7px + 1.8vw); 
+    margin-left: 2vw;
+    text-wrap: balance;
+    word-spacing:.3vw;
+    letter-spacing: .05vw;
+    display: flex;
+    color: white;
+    margin-right: calc(-1px - 3vw); 
+}
+
+
+/* End of Projects Syling */
+/*_______________________________________________           Expertise*/
+/* Start of Expertise Syling */
+
+.expertise * {
+    font-family: Nunito, sans-serif;
+  }
+
+  .expertise .containerBlock {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: flex;
+    background-color:#d7c1a2;
+  }
+  
+  .expertise .containerBlock.bg {
+    max-width: 300vw;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10vw;
+    padding-right: 1vw;
+    padding-bottom: 15vw;
+    padding-left: 1vw;
+  }
+  
+  .expBlockTitle {
+    font-size: 3vw;
+    line-height: 4vw;
+    font-weight: 700;
+    color: #563c17;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    text-align: center;
+    margin-bottom: .5vw;
+  }
+  
+  .expBlockIntroDes {
+    max-width: 80vw;
+    font-size: 2.5vw;
+    line-height: 5vw;
+    color: #000000;
+    font-weight: 100;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .expBlock {
+    width: 30%;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 1vw;
+    padding-bottom: 10vw;
+    padding-left: 1vw;
+    border-radius: 4vw;
+    border-style: solid;
+    border-width: .2vw;
+    border-color:#422701;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    max-width: 30vw;
+  }
+  
+  .expBlockIMG {
+    width: 7vw;
+    min-height: 7vw;
+    padding:1vw;
+    background-size: cover;
+  }
+  
+  .expBlockTxt {
+    font-size: 2vw;
+    line-height: 3vw;
+    color: #4e3c2d;
+    font-weight: 50;
+    text-align: center;
+    padding: 1vw;
+  }
+  
+  .expBlockDes {
+    font-size: 2vw;
+    line-height: 3vw;
+    color:#422701;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .expertise .containerBlock.content {
+    justify-content: space-evenly;
+    width: auto;
+  }
+  
+  .expertise .containerBlock.card:hover {
+    border-color: #333333;
+    border-style: solid;
+    border-width: 1vw;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+  }
+  
+
+/* End of Expertise Syling */
+/*_______________________________________________           Contact*/
+/* Start of Contact Syling */
+.contact * {
+    font-family: Nunito, sans-serif;
+  }
+  
+  .contact a, 
+  .contact button {
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .contact .text-blk {
+    margin: 0;
+    line-height: 1.5;
+    padding: 0;
+  }
+  
+  .contact input:focus, 
+  .contact textarea:focus {
+    outline: none;
+  }
+  
+  .contact .container {
+    height: fit-content;
+    width: 100%;
+    padding: 2vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: flex-start;
+    background-color:#524433;
+  }
+  
+  .contact .container.Container {
+    max-width: 90vw;
+    margin: 3vw auto;
+    height:auto;
+  }
+  
+  .contact .cell {
+    flex: 1;
+    min-height: 5vw;
+    padding:2vw;
+    margin: 2vw;
+  }
+  
+  .contact .text-blk.heading {
+    color: white;
+    font-size: 2.5vw;
+    line-height: 3vw;
+    font-weight: 800;
+    margin: 0 0 2vw 0;
+  }
+  
+  .contact #message, 
+  .contact .fullName, 
+  .contact .email {
+    width: 100%;
+    padding: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 0.5vw;
+  }
+  
+  .contact .emailArea, 
+  .contact .fullNameArea {
+    width: 49%;
+  }
+  
+  .contact .firstRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    margin-bottom: 2vw;
+    width: 100%;
+  }
+  
+  .contact .cardHead {
+    margin: 0 0 0.5vw 0;
+    color: white;
+    font-size: 1.2vw;
+  }
+  
+  .contact .submit {
+    color: white;
+    padding: 1vw;
+    width: 100%;
+    text-align: center;
+    background-color: #00b2eb;
+    border-radius: 0.7vw;
+    font-size: 1.2vw;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact .submit:hover {
+    background-color: #009bca;
+  }
+  
+  .contact .formTable {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1vw;
+  }
+  
+  .contact .messageArea {
+    width: 100%;
+  }
+  
+  @media (max-width: 1024px) {
+    .contact .firstRow {
+      flex-direction: column;
+      gap: 1.5vw;
+    }
+  
+    .contact .emailArea, 
+    .contact .fullNameArea {
+      width: 100%;
+    }
+  
+    .contact .text-blk.heading {
+      font-size: 4vw;
+      line-height: 5vw;
+    }
+  
+    .contact .cardHead {
+      font-size: 1.5vw;
+    }
+  
+    .contact .submit {
+      font-size: 1.5vw;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .contact .container.bigContainer {
+      padding: 2vw 1.5vw;
+    }
+  
+    .contact .container.Container {
+      padding: 0 
+    }
+  }
