@@ -1,0 +1,85 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class NumberGuessing { 
+
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Welcome to the Number Guessing Game!");
+        System.out.println("1. Easy: natural numbers");
+        System.out.println("2. Medium: real numbers with error threshold 0.5");
+        System.out.println("3. Hard: real numbers with error threshold 0.25");
+        System.out.println("Choose the level of difficulty: (1, 2, or 3)");
+        int choice = scanner.nextInt();
+
+        switch(choice) {
+            case 1:
+                easy();
+                break;
+            case 2:
+                mediumAndHardAlg(2);
+                break;
+            case 3:
+                mediumAndHardAlg(3);
+                break;
+            default:
+                System.out.println("Invalid choice.  Please select a difficulty level...");
+                break;
+        }
+        scanner.close();
+    }
+
+    public static void easy() {
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        int totalGuesses = 0;
+        for (int x = 0; x < 3; x++) {
+            int secretNum = random.nextInt(10);
+            int guesses = 0;
+
+            System.out.println("Guess the number between  0 - 9");
+            while (true) {
+                int guess = scanner.nextInt();
+                guesses++;
+                if (guess == secretNum) {
+                    System.out.println("Congrats! You picked the right number! Number of Guesses = " + guesses);
+                    break;
+                } else { 
+                    System.out.println("Guess Again");
+                }
+            }
+            totalGuesses += guesses;
+        }
+        double averageGuesses = (double) totalGuesses / 3;
+        System.out.println("Average Number of Guesses Until Completion = " + averageGuesses);
+    }
+
+    public static void mediumAndHardAlg(int level) {
+        Random random = new Random();
+        Scanner scanner = new Scanner(System.in);
+        int totalGuesses = 0;
+        double errorThreshold = (level == 2) ? 0.5 : 0.25;
+
+        for (int x = 0; x < 3; x++) {
+            double secretNum = random.nextDouble() * 10;
+            int guesses = 0;
+
+            System.out.println("Guess the number between  0 - 10");
+            while (true) {
+                double guess = scanner.nextDouble();
+                guesses++;
+                if (Math.abs(guess - secretNum) <= errorThreshold) {
+                    System.out.println("Congrats! You picked the right number! Number of Guesses = " + guesses);
+                    break;
+                } else {
+                    System.out.println("Guess again");
+                }
+            }
+            totalGuesses += guesses;
+            System.out.println("The number was: " + secretNum);
+        }
+        double averageGuesses = (double) totalGuesses / 3;
+        System.out.println("Average number of guesses = " + averageGuesses);
+    }
+}
