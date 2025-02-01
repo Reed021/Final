@@ -301,7 +301,6 @@ body, html {
 .interestTxt {
     font-family: "Times New Roman", Times, serif;
     font-size: calc(.7px + 1.8vw); 
-    margin-left: 2vw;
     text-wrap: balance;
     word-spacing:.3vw;
     letter-spacing: .05vw;
