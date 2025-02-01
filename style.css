@@ -318,13 +318,13 @@ body, html {
     margin-left: 4vw;
 }
 .interest-image-HZ {
-    display: flex;
-    position: relative;
+  display:flex;
     align-self:auto;
-    max-width: 100vw; 
+    max-width: 110%; 
     border-radius: 5vw;
     padding: 2vw;
     text-wrap: wrap;
+    margin-left: 4vw;
 }
 
 
