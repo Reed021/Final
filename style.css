@@ -319,7 +319,6 @@ body, html {
     padding: 2vw;
     text-wrap: wrap;
     margin-left: 4vw;
-    border: 5px solid black;
 }
 
 .interest-image-HZ {
@@ -329,7 +328,6 @@ body, html {
     border-radius: 5vw;
     padding: 2vw;
     text-wrap: wrap;
-    border: 5px solid black;
     margin-left: 4vw;
 
 }
