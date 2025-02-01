@@ -317,7 +317,7 @@ body, html {
     text-wrap: wrap;
     margin-left: 4vw;
 }
-
+.interest-image-HZ {
 width: 100%; /* Make the image fill the container */
     height: 100%; /* Make the image fill the container */
     object-fit: cover; /* Ensures the image covers the box without distortion */
