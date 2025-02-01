@@ -275,7 +275,6 @@ body, html {
     align-items: center;
     justify-content: left;
     width: 35%;
-    height: 40%;
     margin:0 auto;
     padding: 6em;
     border: black;
@@ -289,7 +288,7 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     margin:0 auto;
     padding: 3em;
     margin-right: 2vw;
@@ -320,7 +319,7 @@ body, html {
 }
 
 .interest-image-HZ {
-  display:flex;
+    display: flex;
     align-self:auto;
     max-width: 110%; 
     border-radius: 5vw;
