@@ -1,7 +1,9 @@
 const modal = document.getElementById("imageModal");
 const modalImage = document.getElementById("modalImage");
 const closeModal = document.getElementById("closeModal");
-const images = document.querySelectorAll('.fade-border');
+const images = document.querySelectorAll('abtProfileIMG');
+const images = document.querySelectorAll('interest-image-HZ');
+const images = document.querySelectorAll('interest-image');
 
 function openModal(imageSrc) {
   modal.style.display = "block";
