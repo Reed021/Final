@@ -319,7 +319,7 @@ body, html {
 }
 
 .interest-image-HZ {
-    display: inline-block;
+    display: flex;
     align-self:auto;
     max-width: 100vw; 
     border-radius: 5vw;
