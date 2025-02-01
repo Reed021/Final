@@ -320,6 +320,7 @@ body, html {
 
 .interest-image-HZ {
     display: flex;
+    position: relative;
     align-self:auto;
     max-width: 100vw; 
     border-radius: 5vw;
