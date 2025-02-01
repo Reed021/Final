@@ -318,10 +318,13 @@ body, html {
     margin-left: 4vw;
 }
 .interest-image-HZ {
-width: 100%; /* Make the image fill the container */
-    height: 100%; /* Make the image fill the container */
-    object-fit: cover; /* Ensures the image covers the box without distortion */
-    border-radius: 5vw; /* Match the container's rounded corners */
+    display: flex;
+    position: relative;
+    align-self:auto;
+    max-width: 100vw; 
+    border-radius: 5vw;
+    padding: 2vw;
+    text-wrap: wrap;
 }
 
 
