@@ -209,7 +209,7 @@ body, html {
     align-items: center; 
     background-color: #422701;
     color: rgb(255, 255, 255);
-    font-family: "Arial", Arial, sans-serif;
+    font-family: 'Poppins';
     font-size: calc(5px + 1.5vw); 
     padding: 0.5em;
     border-radius: 0.5em;
@@ -248,7 +248,7 @@ body, html {
     padding: 6em;
     border: black;
     border-radius: 2vw;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Poppins';
     font-size: 1.6vw;
 }
 .interest2 {
@@ -264,7 +264,7 @@ body, html {
     padding: 6em;
     border: black;
     border-radius: 2vw;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Poppins';
     font-size: 1.6vw;
 }
 .interest3 {
@@ -280,7 +280,7 @@ body, html {
     padding: 6em;
     border: black;
     border-radius: 2vw;
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Poppins';
     font-size: 1.6vw;
 }
 .interestTxtBx{
@@ -319,6 +319,7 @@ body, html {
     padding: 2vw;
     text-wrap: wrap;
     margin-left: 4vw;
+    border: 5px solid black;
 }
 
 .interest-image-HZ {
@@ -328,6 +329,7 @@ body, html {
     border-radius: 5vw;
     padding: 2vw;
     text-wrap: wrap;
+    border: 5px solid black;
     margin-left: 4vw;
 
 }
@@ -751,11 +753,11 @@ body, html {
 /* Hover Effect for Images */
 .profile-image:hover {
   transform: scale(1.1);
-  border: 3px solid #2a9d8f;
+  border: 3px solid black;
 }
 .profile-image-HZ:hover {
   transform: scale(1.1);
-  border: 3px solid #2a9d8f;
+  border: 3px solid black;
 }
 
 .modal {
