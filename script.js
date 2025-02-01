@@ -25,14 +25,3 @@ document.querySelectorAll("img").forEach((img) => {
     openModal(img.src);
   });
 });
-
-        // Add event listeners for hover
-images.forEach(image => {
-    image.addEventListener('mouseenter', () => {
-        image.style.borderColor = 'black'; // Fade in black border
-    });
-
-    image.addEventListener('mouseleave', () => {
-        image.style.borderColor = 'transparent'; // Fade out to transparent
-    });
-});
