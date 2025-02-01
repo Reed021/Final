@@ -321,7 +321,7 @@ body, html {
 .interest-image-HZ {
     display: relative;
     align-self:auto;
-    max-width: 40vw; 
+    width: 20vw; 
     border-radius: 5vw;
     padding: 2vw;
     text-wrap: wrap;
