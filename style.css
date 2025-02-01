@@ -319,9 +319,9 @@ body, html {
 }
 
 .interest-image-HZ {
-    display: inline-block;
+    display: relative;
     align-self:auto;
-    max-width: 110%; 
+    max-width: 20vw; 
     border-radius: 5vw;
     padding: 2vw;
     text-wrap: wrap;
