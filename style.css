@@ -749,16 +749,13 @@ body, html {
   }
 /* Hover Effect for Images */
 .abtProfileIMG:hover {
-  transform: scale(1.1);
-  border: 3px solid black;
+  transform: scale(1.02);
 }
 .interest-image-HZ:hover {
-  transform: scale(1.1);
-  border: 3px solid black;
+  transform: scale(1.02);
 }
 .interest-image:hover {
-  transform: scale(1.1);
-  border: 3px solid black;
+  transform: scale(1.02);
 }
 
 .modal {
