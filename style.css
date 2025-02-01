@@ -492,7 +492,7 @@ body, html {
 }
 
 .download-button:hover {
-  background-color: #0056b3;
+  background-color: #361f0f;
 }
 /* End of Projects Syling */
 /*_______________________________________________           Expertise*/
@@ -751,11 +751,15 @@ body, html {
     }
   }
 /* Hover Effect for Images */
-.profile-image:hover {
+.abtProfileIMG:hover {
   transform: scale(1.1);
   border: 3px solid black;
 }
-.profile-image-HZ:hover {
+.interest-image-HZ:hover {
+  transform: scale(1.1);
+  border: 3px solid black;
+}
+.interest-image:hover {
   transform: scale(1.1);
   border: 3px solid black;
 }
